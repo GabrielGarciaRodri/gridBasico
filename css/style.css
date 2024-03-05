@@ -46,6 +46,38 @@ body{
     grid-area: menu;
 }
 
+/* CONTENIDO ITEM 1 */
+
+.left{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 60px;
+    align-items: center;
+}
+
+.left ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+}
+
+.left ul li{
+    display: flex;
+    align-items: center;
+}
+
+.left input{
+    position: relative;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    border: none;
+    padding: 10px;
+    width: 130px;
+    height: 35px;
+}
 .item_2{
     background: blue;
     grid-area: notification;
