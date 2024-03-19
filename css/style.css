@@ -42,34 +42,35 @@ body{
     border-radius: 5px;
 }
 .item_1{
-    background: red;
+    display: flex;
     grid-area: menu;
 }
 
 /* CONTENIDO ITEM 1 */
 
-.left{
+.busqueda{
     display: flex;
     flex-direction: row;
     width: 50%;
     height: 60px;
     align-items: center;
+    background: var(--color-secundary);
 }
 
-.left ul{
+.busqueda ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     width: 100%;
 }
 
-.left ul li{
+.busqueda ul li{
     display: flex;
     align-items: center;
 }
 
-.left input{
+.busqueda input{
     position: relative;
     border-radius: 5px;
     background-color: var(--color-primary);
@@ -78,14 +79,99 @@ body{
     width: 130px;
     height: 35px;
 }
-.item_2{
-    background: blue;
-    grid-area: notification;
+
+.busqueda i{
+    position: absolute;
+    transform: translateX(700%);
 }
 
+.users{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    height: 60px;
+    background: linear-gradient(90deg, var(--color-ternary));
+}
+
+.users .iconos{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    font-size: 30px;
+}
+
+.users .iconos li{
+    margin-left: 7px;
+}
+
+.users .datos{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.users .datos li{
+    list-style: none;
+    font-size: 15px;
+}
+
+.users .datos li p{
+    font-size: 13px;
+}
+
+.user{
+    font-size: 50px;
+    list-style: none;
+}
+
+.item_2{
+    background: var(--color-ternary);
+    grid-area: notification;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info{
+    display: flex;
+    margin: 12px;
+}
+
+.arriba p{
+    font-size: 15px;
+    width: 90%;
+}
+
+.arriba i{
+    width: 10%;
+    font-size: 20px;
+}
+
+.info h4{
+    width: 100%;
+    margin-left: 12px;
+}
+
+
 .item_3{
-    background: orange;
     grid-area: sales;
+    padding: 16px;
+    background: var(--color-secundary);
+}
+
+.item_3 .contenido strong{
+    color: var(--color-cuarto);
+}
+
+.item_3 .contenido .años{
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .item_4{
